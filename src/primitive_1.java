@@ -2,16 +2,18 @@ import java.util.Scanner;
 
 public class primitive_1 {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        System.out.println("Введите число для проверки: ");
-        int c = in.nextInt();
-        String result = "";
-        if (c % 3 == 0){
-            result = "fizz ";
+        int i = 0;
+        while (i < 100) {
+            String result = "";
+            if (i % 3 == 0) {
+                result = "fizz ";
+            }
+            if (i % 5 == 0) {
+                result = result + "buzz";
+            }
+            System.out.println("Число  " + i + " Результат: " + result);
+            i++;
         }
-        if (c % 5 == 0){
-            result = result + "buzz";
-        }
-        System.out.println(result);
     }
 }
+

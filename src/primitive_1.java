@@ -2,8 +2,7 @@ import java.util.Scanner;
 
 public class primitive_1 {
     public static void main(String[] args) {
-        int i = 1;
-        while (i <= 100) {
+        for (int i = 1; i<= 100; i++) {
             String result = "";
             if (i % 3 == 0) {
                 result = "fizz ";
@@ -12,7 +11,6 @@ public class primitive_1 {
                 result = result + "buzz";
             }
             System.out.println("Число  " + i + " Результат: " + result);
-            i++;
         }
     }
 }
